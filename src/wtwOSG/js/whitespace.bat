@@ -1,0 +1,1 @@
+"c:\Program Files (x86)\Java\jre7\bin\java.exe" -jar d:\Tassilo\lib\googleClosureCompiler\compiler.jar --compilation_level WHITESPACE_ONLY --js_output_file=osgJS.js --js=osg.js --js=osgGA.js --js=Vec3.js --js=Matrix.js --js=Manipulator.js --js=FirstPersonManipulator.js --js=OrbitManipulator.js  

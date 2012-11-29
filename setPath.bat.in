@@ -1,0 +1,11 @@
+SET OSG_DIR=${OSG_DIR}
+
+REM set the install path to be included in the PATH environment variable
+set PATH=${CMAKE_INSTALL_PREFIX}\bin;${3RD_PARTY_DIR}\bin;%OSG_DIR%\bin;%PATH%
+set MVSCPATH=${MSVC_PATH}
+
+REM uncomment the next line, if you want a command line (X64, only)
+REM %comspec% /k ""%MVSCPATH%/../../VC/vcvarsall.bat"" x64
+
+REM open the solution with your standard visual studio
+wtgles2.sln
