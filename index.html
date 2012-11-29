@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Wtgles2 by ReWeb3D</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Wtgles2</h1>
+        <p>wtgles2 provides an OpenGLES2 library and serializes the commands to WebgGL using WebToolkit (Wt)</p>
+
+        <p class="view"><a href="https://github.com/ReWeb3D/wtgles2">View the Project on GitHub <small>ReWeb3D/wtgles2</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/ReWeb3D/wtgles2/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/ReWeb3D/wtgles2/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/ReWeb3D/wtgles2">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h2>What is wtgles2 and ReWeb3D?</h2>
+
+<p>ReWeb3D is a C++ framework to bring 3D rendering of OpenGLES2 
+applications to web applications, using WebGL. It consists of an
+adapted version of <a href="http://www.webtoolkit.eu/wt">Wt</a> and the 
+wtgles2 wrapper library.
+It has been tested successfully with <a href="http://www.openscenegraph.org">OpenSceneGraph</a>
+and <a href="http://osgearth.org">osgEarth</a> applications.</p>
+
+<h2>How does it work</h2>
+
+<p>OpenGLES2 is a subset of OpenGL developed especially for mobile and embedded
+devices. It does not provide "fixed functions" of OpenGL 2 and below, but
+is very close to WebGL, an OpenGL API for web browsers (Javascript).</p>
+
+<p>ReWeb3D provides an OpenGLES2 implementation that you can link your application
+to. If you start the application, OpenGLES2 calls are captured and serialized
+as WebGL calls in an HTML page which is served over HTTP. The browser
+loads this page and renders the content of your application.</p>
+
+<h2>Examples and Demos</h2>
+
+<p>As examples, you can find basic OpenSceneGraph examples ported to ReWeb3D
+in the repository. Running versions may be found at <a href="http://demos.vicomtech.org/">http://demos.vicomtech.org/</a></p>
+
+<ul>
+<li>
+<a href="http://demos.vicomtech.org/wt/examples/osggeometry.wt">osgGeometry</a> demonstrates different simple geometry
+types and animation on the server</li>
+<li>
+<a href="http://demos.vicomtech.org/wt/examples/osgshape.wt">osgShape</a> shows different OSG shapes</li>
+<li>
+<a href="http://demos.vicomtech.org/wt/examples/osglight.wt">osgLight</a> includes two light sources and a server side animation</li>
+<li>
+<a href="http://demos.vicomtech.org/wt/examples/osgViewerWt.wt">osgViewer</a> is the generic viewer for OSG</li>
+<li>
+<a href="http://demos.vicomtech.org/wt/examples/osgEarthViewer.wt">osgEarthViewer</a> is the generic viewer for osgEarth</li>
+</ul><h2>Building</h2>
+
+<p>To build ReWeb3D you need <a href="http://www.cmake.org/CMake">CMake</a> to create 
+the project files for your platform. You need the following components:</p>
+
+<ul>
+<li>wtgles2 at <a href="https://github.com/ReWeb3D/wtgles2.git">https://github.com/ReWeb3D/wtgles2.git</a>
+</li>
+<li>adapted version of Wt at <a href="https://github.com/ReWeb3D/wt.git">https://github.com/ReWeb3D/wt.git</a>
+</li>
+</ul><p>Optional but recommended to see the examples</p>
+
+<ul>
+<li>OpenSceneGraph at <a href="http://www.openscenegraph.org/svn/osg/OpenSceneGraph/trunk">http://www.openscenegraph.org/svn/osg/OpenSceneGraph/trunk</a>
+</li>
+<li>osgEarth at <a href="https://github.com/ReWeb3D/osgearth.git">https://github.com/ReWeb3D/osgearth.git</a>
+</li>
+</ul><p>Build sequence </p>
+
+<ul>
+<li>build Wt (with WRaster support), see the <a href="http://www.webtoolkit.eu/wt/doc/reference/html">Wt documentation</a>
+</li>
+<li>build wtgles2 will provide an OpenGLES2 library and headers</li>
+<li>build OpenSceneGraph using the provided OpenGLES2 library and headers see <a href="http://www.openscenegraph.org/projects/osg/wiki/Community/OpenGL-ES">osg documentation</a>
+</li>
+<li>build osgEarth using the compiled OpenGLES2 and OSG versions</li>
+<li>build wtgles2 examples</li>
+</ul><h2>License</h2>
+
+<p>You may use the library under the <a href="http://www.gnu.org/copyleft/gpl.html">GNU General Public License</a>,
+just like Wt.
+Providing a more permissive license is not possible because of the OpenGLES2 license and Wt's license.</p>
+
+<h2>Acknowlegements</h2>
+
+<p>This work has been supported by <a href="http://www.vicomtech.org">Vicomtech</a>.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/ReWeb3D">ReWeb3D</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-36686516-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
