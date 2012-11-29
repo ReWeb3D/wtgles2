@@ -1,4 +1,4 @@
-## What is wtgles2 and ReWeb3D?
+## What is ReWeb3D and wtgles2?
 
 ReWeb3D is a C++ framework to bring 3D rendering of OpenGLES2 
 applications to web applications, using WebGL. It consists of an
