@@ -16,15 +16,22 @@ devices. It does not provide "fixed functions" of OpenGL 2 and below, but
 is very close to WebGL, an OpenGL API for web browsers (Javascript).
 
 ReWeb3D provides an OpenGLES2 implementation that you can link your application
-to. If you start the application, OpenGLES2 calls are captured an serialized
+to. If you start the application, OpenGLES2 calls are captured and serialized
 as WebGL calls in an HTML page which is served over HTTP. The browser
-loads this page and the renders the content of your application.
+loads this page and renders the content of your application.
 
 Demos, examples
 ---------------
 
 As examples, you can find basic OpenSceneGraph examples ported to ReWeb3D
 in the repository. Running versions may be found at http://demos.vicomtech.org/
+
+- [osgGeometry](http://demos.vicomtech.org/wt/examples/osggeometry.wt) demonstrates different simple geometry
+types and animation on the server
+- [osgShape](http://demos.vicomtech.org/wt/examples/osgshape.wt) shows different OSG shapes
+- [osgLight](http://demos.vicomtech.org/wt/examples/osglight.wt) includes two light sources and a server side animation
+- [osgViewer] (http://demos.vicomtech.org/wt/examples/osgViewerWt.wt) is the generic viewer for OSG
+- [osgEarthViewer](http://demos.vicomtech.org/wt/examples/osgEarthViewer.wt) is the generic viewer for osgEarth
 
 Building
 --------
